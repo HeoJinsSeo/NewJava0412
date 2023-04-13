@@ -1,5 +1,7 @@
 package extend;
 
+import java.util.ArrayList;
+
 public class CopyTest {
 
 	public static void main(String[] args) {
@@ -47,6 +49,24 @@ public class CopyTest {
 		for (String tmp : arr_bb) {
 			System.out.println(tmp);
 		}
+		
+		try {
+			Thread.sleep(3 * 1000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		
+		long start = System.currentTimeMillis();
+		now = System.currentTimeMillis();
+		while((now - start) < 3000) {
+			now = System.currentTimeMillis();
+		}
+		
+		
+		ArrayList<String> al = new ArrayList<String>();
+		al.add("wef");
+
+		
 		
 		bb = bb + ";6";
 		// double 소수점 15자리까지 나타낼 수 있음
